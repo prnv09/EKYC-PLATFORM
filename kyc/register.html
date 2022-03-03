@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-KYC PLATFORM</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>E-KYC PLATFORM</h1>
+        <img src="./img/logo.jpg" alt="E-KYC logo" width="100">
+    </header>
+    <main>
+    <h1>Register</h1>
+    <form id="role">
+        <select name="role" id="role"  onChange="showDiv(this)">
+            <option value="Student"> Student</option>
+            <option value="Institute">Institute</option>
+            <option value="Verifier">Verifier</option>
+        </select>
+    </form>
+        <br>
+        <!-- Student Form -->
+        <div id="student-form">
+        <form action="">
+            <label for="stu_name">Student Name</label>
+            <input type="text" name="stu_name" id="stu_name">
+            <br>
+            <label for="stu_dob">Date of Birth</label>
+            <input type="date" name="stu_dob" id="stu_dob">
+            <br>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="gender" value="Male">Male
+            <input type="radio" name="gender" id="gender" value="Female">Female
+            <br>
+            <label for="stu_mail">E-mail</label>
+            <input type="email" name="stu_mail" id="stu_mail">
+            <br>
+            <label for="stu_pass">Password</label>
+            <input type="password" name="stu_password" id="stu_password">
+            <br>
+            <label for="stu_clg">College Name</label>
+            <input type="text" name="stu_clg" id="stu_clg">
+            <br>
+            <label for="stu_class">Class</label>
+            <select name="stu_class" id="stu_class">
+                <option value="FY">First Year</option>
+                <option value="SY">Second Year</option>
+                <option value="TY">Third Year</option>
+                <option value="BE">Final Year</option>
+            </select>
+            <br>
+            <label for="stu_div">DIV</label>
+            <select name="stu_div" id="stu_div">
+                <option value="div_A">A</option>
+                <option value="div_B">B</option>
+                <option value="div_C">C</option>
+                <option value="div_D">D</option>
+            </select>
+            <br>
+            <label for="stu_roll">Roll Number</label>
+            <input type="number" name="stu_roll" id="stu_roll">
+            <br>
+            <input type="submit" value="Register">
+        
+        </form>
+        </div>
+        <br>
+
+        <!-- Institute form -->
+        <div id="institute-form">
+        <form action="">
+            <label for="clg_name">College name</label>
+            <input type="text" name="clg_name" id="clg_name">
+            <br>
+            <label for="clg_id">AICTE ID</label>
+            <input type="text" name="clg_id" id="clg_id">
+            <br>
+            <label for="clg_mail">E-mail</label>
+            <input type="email" name="clg_mail" id="clg_mail">
+            <br>
+            <label for="clg_pass">Password</label>
+            <input type="password" name="clg_pass" id="clg_pass">
+            <br>
+            <input type="submit" value="Register">
+        </form>
+        </div>
+<br>
+        <!-- Company-Form -->
+        <div id="company-form">
+        <form action="">
+            <label for="company_name">Name of Organization</label>
+            <input type="text" name="company_name" id="company_name">
+            <br>
+            <label for="company_mail">E-mail</label>
+            <input type="email" name="company_mail" id="company_mail">
+            <br>
+            <label for="company_pass">Password</label>
+            <input type="password" name="company_pass" id="company_pass">
+            <br>
+            <input type="submit" value="Register">
+        </form>
+        </div>
+    
+    </main>
+</body>
+</html>
