@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    background: antiquewhite;
+}
+header{
+    color: #aaa25f;
+}
+main{
+    display: block;
+   text-align: center;}
+form{
+    display: inline-block;
+    text-align: center;
+    border: black solid 2px;
+    padding: 15px;
+    margin: 5px;
+}
+
+form input{
+    margin: 12px;
+}
+
+
+
+#institute-form{
+    display: none;
+}
+
+#company-form{
+    display: none;
+}
